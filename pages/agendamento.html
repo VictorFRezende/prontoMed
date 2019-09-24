@@ -1,0 +1,50 @@
+<html>
+
+<head>
+	<link href="css/menu.css" rel="stylesheet">
+	<title> ProntoMed - Agendamento</title>
+</head>
+
+<body bgcolor="#41E4DB">
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a class="active" href="agendamento.html">Agendamento</a></li>
+		<li><a href="historicoAgendamento.html">Historico de Agendamento</a></li>
+		<li><a href="../index.html">Sair</a></li>
+	</ul>
+	<div align="center">
+		<h1>ProntoMed - Agendamento</h1><br />
+		<label>Local:</label><br />
+		<select name="select">
+			<option value="loc01"></option>
+			<option value="loc02">Belo Horizonte - Unimed BH</option>
+			<option value="loc03">Contagem - Unimed Contagem</option>
+			<option value="loc04">Betim - Unimed Betim</option>
+		</select><br />
+		<label>Médicos:</label><br />
+		<select name="select">
+			<option value="med01"></option>
+			<option value="med02">Arthur Santana - CRM 114578</option>
+			<option value="med03">Deborah Ricaldone - CRM 112345</option>
+			<option value="med04">Thiago Henrique - CRM 124596</option>
+		</select><br />
+		<label>Data/Hora:</label><br />
+		<input type="datetime-local" name="date" /><br /><br />
+
+		<a href="home.html"><button type="cancelar">Cancelar</button></a>
+		<button type="agendar" onclick="agendar()">Agendar</button><br /><br />
+
+		<br />
+		<hr color="black" />
+	</div>
+
+	<script>
+		function agendar() {
+			window.confirm("Agendado com sucesso!");
+			window.location = "historicoAgendamento.html";
+		}
+	</script>
+
+</body>
+
+</html>
